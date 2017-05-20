@@ -1,0 +1,1 @@
+"use strict";function updateClock(){if(currentTimeLeft>=0&&$("#clock").html(Math.floor(currentTimeLeft/60)+":"+currentTimeLeft%60),0==(currentTimeLeft=currentTimeLeft?currentTimeLeft-1:0)&&clockIsTrue)return alert("Time is Up!"),void(clockIsTrue=!1)}function setClock(e){clockIsTrue=!0,currentTimeLeft=60*e}var currentTimeLeft=0,clockIsTrue=!1;setInterval(updateClock,1e3);
